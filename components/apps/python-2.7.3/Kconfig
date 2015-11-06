@@ -1,0 +1,14 @@
+###############################################################################
+# Please modify this file if you want to configure your own application.
+# You can uncommon and/or change the following Kconfig elements.
+###############################################################################
+
+
+if ROOTFS_COMPONENT_APPS_NAME_PYTHON__2___7___3
+	comment "No additional options for PYTHON__2___7___3"
+
+# 	config APPS_PYTHON__2___7___3_OPTION0
+#	bool "option0"
+#	help
+#	  Help text
+endif
