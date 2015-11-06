@@ -1,0 +1,15 @@
+# Automatically Mount SD Card
+
+## Hardware Requirements
+This app doesn't require any specific hardware logic
+
+## Usage
+- Create this app in your PetaLinux project: `petalinux-create -t apps -n fstab_mount_sd --template install --enable`
+- Copy the files from this directory into your local project's `components/apps/fstab_mount_sd/`
+- Build your image: `petalinux-build`
+- If your image has been built, you can build only this app and install it to target file system:
+
+```
+petalinux-build -c rootfs/fstab_mount_sd
+petalinux-build -x package
+```
