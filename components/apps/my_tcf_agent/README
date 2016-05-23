@@ -1,0 +1,3 @@
+This TCF Agent is built with the workflow documented in http://www.xilinx.com/support/answers/65538.html
+
+Note: When enabling this app, the original TCF Agent in rootfs should be disabled.
