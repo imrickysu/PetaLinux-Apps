@@ -10,7 +10,7 @@ SOURCE_URL = https://www.python.org/ftp/python/2.7.3/Python-2.7.3.tar.bz2
 SOURCE = $(notdir $(SOURCE_URL))
 # remove two levels of suffix
 SOURCE_DIR = $(basename $(basename $(SOURCE)))
-PATCH_URL = http://randomsplat.com/wp-content/uploads/2012/10/Python-2.7.3-xcompile.patch
+PATCH_URL = https://gist.github.com/bmount/6929380
 PATCH = $(notdir $(PATCH_URL))
 
 
@@ -31,7 +31,7 @@ $(SOURCE_DIR): $(SOURCE)
 
 $(PATCH):
 	@echo "Downloading cross-compile patch"
-	wget $(PATCH_URL)
+	git clone $(PATCH_URL)
 
 # Host Python compilation
 # depends on extracted sources
